@@ -1,0 +1,166 @@
+#include "menu_calls.h"
+
+#include <stdio.h>
+#include <xbasic_types.h>
+
+#include "../TESTPATTERN/pattern.h"
+#include "../UART/uartio.h"
+
+
+
+void menu_calls() {
+
+	int current_status;
+	int menu_calls_enable = TRUE;
+	unsigned int uart_io;
+	int current_state = 0;
+	u32 uart_quit;
+	int i;
+	while (menu_calls_enable == TRUE) {
+		switch (current_state) {
+		case mainmenu:
+			cmds_menu();
+			current_state = menu_select;
+			break;
+		case menu_select:
+			uart_io = uart_prompt_io();
+			if (uart_io == 0) {
+				uart_Red_Text();
+				printf("Enter cmd[r],[w],[s]=%x\n", uart_io);
+				printf("\r>>");
+				uart_Default_Text();
+				break;
+			} else {
+				uart_Default_Text();
+				current_state = uart_io;
+				break;
+			}
+			break;
+		case clear:
+			menu_cls();
+			break;
+		case cmds_vdfxa:
+			//*****************************
+			uart_quit = uart_prompt_io();
+			if (uart_quit == cmds_quit) {current_state = mainmenu;break;
+			} else {current_state = cmds_vdfxa;break;}
+			//*****************************
+		case cmds_vdfxb:
+
+
+			//*****************************
+			uart_Yellow_Text();
+			printf("[cmds quite] to exit or [enter] to continue\n");
+			uart_Default_Text();
+			printf("\r>>");
+			uart_quit = uart_prompt_io();
+			if (uart_quit == cmds_quit) {current_state = mainmenu;break;
+			} else {current_state = cmds_vdfxb;break;}
+			//*****************************
+		case cmds_vdfxc:
+			for (i=0; i<3; i++) {
+
+			 }
+			//*****************************
+			uart_quit = uart_prompt_io();
+			if (uart_quit == cmds_quit) {current_state = mainmenu;break;
+			} else {current_state = cmds_vdfxc;break;}
+			//*****************************
+
+		case cmds_vdapic:
+
+			//*****************************
+			uart_Yellow_Text();
+			printf("[cmds quite] to exit or [enter] to continue\n");
+			uart_Default_Text();
+			printf("\r>>");
+			uart_quit = uart_prompt_io();
+			if (uart_quit == cmds_quit || cmds_space) {current_state = mainmenu;break;
+			} else {current_state = cmds_vdapic;break;}
+			//*****************************
+		case cmds_vdapib:
+
+			//*****************************
+			uart_Yellow_Text();
+			printf("[cmds quite] to exit or [enter] to continue\n");
+			uart_Default_Text();
+			printf("\r>>");
+			uart_quit = uart_prompt_io();
+			if (uart_quit == cmds_quit || cmds_space) {current_state = mainmenu;break;
+			} else {current_state = cmds_vdapic;break;}
+			//*****************************
+
+
+		case cmds_vdtesta:
+
+
+
+			//*****************************
+			uart_quit = uart_prompt_io();
+			if (uart_quit == cmds_quit) {current_state = mainmenu;break;
+			} else {current_state = cmds_vdtesta;break;}
+			//*****************************
+		case cmds_vdtestb:
+			for (i=0; i<2594; i++) {
+
+			 }
+			//*****************************
+			uart_quit = uart_prompt_io();
+			if (uart_quit == cmds_quit) {current_state = mainmenu;break;
+			} else {current_state = cmds_vdtestb;break;}
+			//*****************************
+		case cmds_vdtestc:
+			for (i=0; i<2594; i++) {
+
+			 }
+			//*****************************
+			uart_quit = uart_prompt_io();
+			if (uart_quit == cmds_quit) {current_state = mainmenu;break;
+			} else {current_state = cmds_vdtestc;break;}
+			//*****************************
+		case cmds_uart:
+			uartvalue();
+			//*****************************
+			uart_quit = uart_prompt_io();
+			if (uart_quit == cmds_quit) {current_state = mainmenu;break;
+			} else {current_state = cmds_uart;break;}
+			//*****************************
+
+		case cmds_patternv1:
+			current_status=pattern();
+			printf("Done\n");
+			printf("[cmds quite] to exit or [enter] to continue\n");
+			printf("\r>>");
+			//*****************************
+			uart_quit = uart_prompt_io();
+			if (uart_quit == cmds_quit) {current_state = mainmenu;break;
+			} else {current_state = cmds_patternv1;break;}
+			//*****************************
+		case cmds_patternv2:
+			current_status=zed_hdmi_display_init( &demo );
+			printf("Done\n");
+			printf("[cmds quite] to exit or [enter] to continue\n");
+			printf("\r>>");
+			//*****************************
+			uart_quit = uart_prompt_io();
+
+			if (uart_quit == cmds_quit) {current_state = mainmenu;break;
+			} else {current_state = cmds_patternv2;break;}
+			//*****************************
+		case cmds_patternv3:
+
+			//*****************************
+			uart_quit = uart_prompt_io();
+			if (uart_quit == cmds_quit) {current_state = mainmenu;break;
+			} else {current_state = cmds_patternv3;break;}
+			//*****************************
+		default:
+			printf("??\r\n");
+			printf("\r\n");
+			current_state = mainmenu;
+			break;
+		}
+	}
+	printf("sssss\r\n");
+	menu_calls_enable = TRUE;
+}

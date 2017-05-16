@@ -1,0 +1,8 @@
+#include "MENU_CALLS/menu_calls.h"
+#include "PLATFORM/platform.h"
+int main(void)
+{
+    init_platform();
+    menu_calls();
+	return 0;
+}

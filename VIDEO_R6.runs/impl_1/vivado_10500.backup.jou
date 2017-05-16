@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Mar 18 02:22:29 2017
+# Process ID: 10500
+# Current directory: C:/Sim/VIDEO_R7/VIDEO_R6.runs/impl_1
+# Command line: vivado.exe -log VIDEO_R6_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source VIDEO_R6_wrapper.tcl -notrace
+# Log file: C:/Sim/VIDEO_R7/VIDEO_R6.runs/impl_1/VIDEO_R6_wrapper.vdi
+# Journal file: C:/Sim/VIDEO_R7/VIDEO_R6.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source VIDEO_R6_wrapper.tcl -notrace

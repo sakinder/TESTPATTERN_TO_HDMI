@@ -1,0 +1,16 @@
+22:27:56 **** Build of configuration Debug for project standalone_bsp_0_xaxivdma_example_selftest_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xaxivdma_example_selftest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xaxivdma_example_selftest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xaxivdma_example_selftest.d" -MT"src/xaxivdma_example_selftest.o" -o "src/xaxivdma_example_selftest.o" "../src/xaxivdma_example_selftest.c"
+../src/xaxivdma_example_selftest.c: In function 'main':
+../src/xaxivdma_example_selftest.c:89:34: error: 'DMA_DEV_ID' undeclared (first use in this function)
+  Status = AxiVDMASelfTestExample(DMA_DEV_ID);
+                                  ^
+../src/xaxivdma_example_selftest.c:89:34: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/xaxivdma_example_selftest.o] Error 1
+
+22:27:56 Build Finished (took 364ms)
+

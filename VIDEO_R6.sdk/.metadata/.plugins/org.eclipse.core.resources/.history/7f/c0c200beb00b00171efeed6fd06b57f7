@@ -1,0 +1,10 @@
+#include "MENU_CALLS/menu_calls.h"
+#include "PLATFORM/platform.h"
+#include "HDMI_DISPLAY/zed_hdmi_display.h"
+zed_hdmi_display_t demo;
+int main(void)
+{
+    init_platform();
+    menu_calls();
+	return 0;
+}

@@ -1,0 +1,33 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port video_in -pg 1 -y 250 -defaultsOSRD
+preplace port CLK_150MHZ -pg 1 -y 420 -defaultsOSRD
+preplace port vid_io_out -pg 1 -y 350 -defaultsOSRD
+preplace port ctrl -pg 1 -y 40 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -y 180 -defaultsOSRD
+preplace port CLK_148MHZ -pg 1 -y 60 -defaultsOSRD
+preplace inst ILS_V3 -pg 1 -lvl 4 -y 100 -defaultsOSRD
+preplace inst GND -pg 1 -lvl 3 -y 480 -defaultsOSRD
+preplace inst VIDEO_OUT -pg 1 -lvl 4 -y 400 -defaultsOSRD
+preplace inst TIMMING_CONTROLELR -pg 1 -lvl 3 -y 120 -defaultsOSRD
+preplace inst RGB_CCM -pg 1 -lvl 1 -y 280 -defaultsOSRD
+preplace inst RGB_2_YCRCB -pg 1 -lvl 2 -y 310 -defaultsOSRD
+preplace inst VCC -pg 1 -lvl 2 -y 110 -defaultsOSRD
+preplace inst RESAMPLER -pg 1 -lvl 3 -y 340 -defaultsOSRD
+preplace netloc ctrl_1 1 0 3 NJ 40 NJ 40 NJ
+preplace netloc Conn1 1 3 1 690
+preplace netloc VCC_dout 1 0 4 20 160 220 160 450 420 700
+preplace netloc RGB_CCM_video_out 1 1 1 NJ
+preplace netloc Conn3 1 4 1 N
+preplace netloc s_axi_aresetn_1 1 0 3 NJ 180 NJ 180 NJ
+preplace netloc vid_io_out_clk_1 1 0 4 NJ 60 NJ 60 430 -10 680J
+preplace netloc RGB_2_YCRCB_video_out 1 2 1 N
+preplace netloc video_in_1 1 0 1 NJ
+preplace netloc VIDEO_OUT_vtg_ce 1 2 3 460 -30 NJ -30 950
+preplace netloc GND_dout 1 3 1 NJ
+preplace netloc aclk_1 1 0 4 10J -20 230 -20 440 -20 710J
+preplace netloc TIMMING_CONTROLELR_vtiming_out 1 3 1 700
+levelinfo -pg 1 -10 120 330 570 830 970 -top -70 -bot 530
+",
+}

@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Sim\VIDEO_R7\VIDEO_R6.sdk\fsbl\Debug\fsbl.elf
+	C:\Sim\VIDEO_R7\VIDEO_R6.sdk\VIDEO_R6_wrapper_hw_platform_0\VIDEO_R6_wrapper.bit
+	C:\Sim\VIDEO_R7\VIDEO_R6.sdk\r_pattern_v3\Debug\r_pattern_v3.elf
+}

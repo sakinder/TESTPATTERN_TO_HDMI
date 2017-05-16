@@ -1,0 +1,13 @@
+22:27:55 **** Build of configuration Debug for project standalone_bsp_0_vdma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/vdma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/vdma.d" -MT"src/vdma.o" -o "src/vdma.o" "../src/vdma.c"
+../src/vdma.c:52:19: fatal error: xintc.h: No such file or directory
+compilation terminated.
+make: *** [src/vdma.o] Error 1
+
+22:27:55 Build Finished (took 355ms)
+

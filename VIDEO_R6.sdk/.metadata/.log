@@ -1,0 +1,3670 @@
+!SESSION 2017-03-18 02:35:50.689 -----------------------------------------------
+eclipse.buildId=2016.3
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Sim/VIDEO_R7/VIDEO_R6.sdk
+
+This is a continuation of log file C:\Sim\VIDEO_R7\VIDEO_R6.sdk\.metadata\.bak_1.log
+Created Time: 2017-03-18 21:19:16.390
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.390
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.391
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.404
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.405
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.407
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.408
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.410
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.411
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.425
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.429
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.431
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.432
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.434
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.435
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.437
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.437
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.453
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+},
+"xilffs": {"enable_mmc": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables MMC support if true. If false, SD is enabled.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"enable_multi_partition": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "0:Single partition, 1:Enable multiple partition",
+"permit": "",
+"options": {},
+"range": "",
+},
+"fs_interface": {"category": "",
+"value": "1",
+"default": "1",
+"type": "int",
+"desc": "Enables file system with selected interface. Enter 1 for SD.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"num_logical_vol": {"category": "",
+"value": "2",
+"default": "2",
+"type": "int",
+"desc": "Number of volumes (logical drives, from 1 to 10) to be used.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"read_only": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables the file system in Read_Only mode if true. ZynqMP fsbl will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_lfn": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables the Long File Name(LFN) support if true.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_mkfs": {"category": "",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Disable(0) or Enable(1) f_mkfs function. ZynqMP fsbl will set this to false",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.454
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.456
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.457
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.459
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.460
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.473
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.474
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.476
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.476
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.478
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.479
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.492
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.502
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.504
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.505
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.506
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.517
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.519
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.519
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.774
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program.",
+"supp_proc": "microblaze ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "standalone",
+},
+"empty_application": {"userdefname": "Empty Application",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel freertos823_xilinx",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "standalone",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "freertos823_xilinx",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "standalone",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos823_xilinx",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "standalone",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "standalone",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal Echo Demo",
+"description": "Libmetal Echo Application",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "standalone",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "standalone",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "",
+"supp_os": "",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "standalone",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "standalone",
+},
+"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "standalone",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "standalone",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "standalone",
+},
+"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "standalone",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "standalone",
+},
+"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Update the serial_flash_family & serial_flash_interface in xilisf library in BSP settings!
+
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "standalone",
+},
+"xilkernel_thread_demo": {"userdefname": "Xilkernel POSIX Threads Demo",
+"description": "This Xilkernel based application provides a simple example of how to create multiple POSIX threads and synchronize with them when they are complete. This example creates an initial master thread. The master thread creates 4 worker threads that go off to compute parts of a sum and return the partial sum as the result. The master thread accumulates the partial sums and prints the result. This example can serve as your starting point for your end application thread structure.",
+"supp_proc": "microblaze",
+"supp_os": "xilkernel",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/xilkernel_thread_demo",
+"os": "standalone",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "standalone",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "standalone",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "standalone",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "standalone",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "standalone",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze",
+"supp_os": "standalone xilkernel",
+"path": "",
+"os": "standalone",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.780
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.811
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.813
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:16.844
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:19.566
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:19.568
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:19.568
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:19.571
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:19.571
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:19.572
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.584
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.586
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.587
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.589
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.590
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.605
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+},
+"xilffs": {"enable_mmc": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables MMC support if true. If false, SD is enabled.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"enable_multi_partition": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "0:Single partition, 1:Enable multiple partition",
+"permit": "",
+"options": {},
+"range": "",
+},
+"fs_interface": {"category": "",
+"value": "1",
+"default": "1",
+"type": "int",
+"desc": "Enables file system with selected interface. Enter 1 for SD.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"num_logical_vol": {"category": "",
+"value": "2",
+"default": "2",
+"type": "int",
+"desc": "Number of volumes (logical drives, from 1 to 10) to be used.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"read_only": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables the file system in Read_Only mode if true. ZynqMP fsbl will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_lfn": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables the Long File Name(LFN) support if true.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_mkfs": {"category": "",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Disable(0) or Enable(1) f_mkfs function. ZynqMP fsbl will set this to false",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.606
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.609
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.609
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.612
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.613
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.626
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.627
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.630
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.630
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.632
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.633
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.647
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.648
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.650
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.651
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.653
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.653
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.656
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.657
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.673
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/fsbl_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+},
+"xilffs": {"enable_mmc": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables MMC support if true. If false, SD is enabled.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"enable_multi_partition": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "0:Single partition, 1:Enable multiple partition",
+"permit": "",
+"options": {},
+"range": "",
+},
+"fs_interface": {"category": "",
+"value": "1",
+"default": "1",
+"type": "int",
+"desc": "Enables file system with selected interface. Enter 1 for SD.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"num_logical_vol": {"category": "",
+"value": "2",
+"default": "2",
+"type": "int",
+"desc": "Number of volumes (logical drives, from 1 to 10) to be used.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"read_only": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables the file system in Read_Only mode if true. ZynqMP fsbl will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_lfn": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enables the Long File Name(LFN) support if true.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"use_mkfs": {"category": "",
+"value": "true",
+"default": "true",
+"type": "bool",
+"desc": "Disable(0) or Enable(1) f_mkfs function. ZynqMP fsbl will set this to false",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.674
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.676
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.676
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.679
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.679
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.693
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v2_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.694
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.696
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.696
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.698
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.699
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.712
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/standalone_bsp_0/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.718
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.720
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.721
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.723
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.729
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.731
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.731
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.978
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program.",
+"supp_proc": "microblaze ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "standalone",
+},
+"empty_application": {"userdefname": "Empty Application",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel freertos823_xilinx",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "standalone",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "freertos823_xilinx",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "standalone",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos823_xilinx",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "standalone",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "standalone",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal Echo Demo",
+"description": "Libmetal Echo Application",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "standalone",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "standalone",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "",
+"supp_os": "",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "standalone",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "standalone",
+},
+"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "standalone",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "standalone",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "standalone",
+},
+"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "standalone",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "standalone",
+},
+"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Update the serial_flash_family & serial_flash_interface in xilisf library in BSP settings!
+
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "standalone",
+},
+"xilkernel_thread_demo": {"userdefname": "Xilkernel POSIX Threads Demo",
+"description": "This Xilkernel based application provides a simple example of how to create multiple POSIX threads and synchronize with them when they are complete. This example creates an initial master thread. The master thread creates 4 worker threads that go off to compute parts of a sum and return the partial sum as the result. The master thread accumulates the partial sums and prints the result. This example can serve as your starting point for your end application thread structure.",
+"supp_proc": "microblaze",
+"supp_os": "xilkernel",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/xilkernel_thread_demo",
+"os": "standalone",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "standalone",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "standalone",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "standalone",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "standalone",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "standalone",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze",
+"supp_os": "standalone xilkernel",
+"path": "",
+"os": "standalone",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:28.983
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:29.014
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:29.016
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:29.047
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:29.665
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:29.667
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:32.085
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:32.087
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:35.792
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:36.047
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program.",
+"supp_proc": "microblaze ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "standalone",
+},
+"empty_application": {"userdefname": "Empty Application",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel freertos823_xilinx",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "standalone",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "freertos823_xilinx",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "standalone",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos823_xilinx",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "standalone",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "standalone",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal Echo Demo",
+"description": "Libmetal Echo Application",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "standalone",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "standalone",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "",
+"supp_os": "",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "standalone",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "standalone",
+},
+"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "standalone",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "standalone",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos823_xilinx standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "standalone",
+},
+"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "standalone",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "standalone",
+},
+"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Update the serial_flash_family & serial_flash_interface in xilisf library in BSP settings!
+
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "standalone",
+},
+"xilkernel_thread_demo": {"userdefname": "Xilkernel POSIX Threads Demo",
+"description": "This Xilkernel based application provides a simple example of how to create multiple POSIX threads and synchronize with them when they are complete. This example creates an initial master thread. The master thread creates 4 worker threads that go off to compute parts of a sum and return the partial sum as the result. The master thread accumulates the partial sums and prints the result. This example can serve as your starting point for your end application thread structure.",
+"supp_proc": "microblaze",
+"supp_os": "xilkernel",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/xilkernel_thread_demo",
+"os": "standalone",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "standalone",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "standalone",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "standalone",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "standalone",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "standalone",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "C:/Xilinx/SDK/2016.3/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze",
+"supp_os": "standalone xilkernel",
+"path": "",
+"os": "standalone",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:36.049
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:36.079
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app empty_application -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:36.674
+!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -sw r_pattern_v3_bsp -dir C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp -processor ps7_cortexa9_0 -os standalone -app empty_application], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:36.704
+!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -sw r_pattern_v3_bsp -dir C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp -processor ps7_cortexa9_0 -os standalone -app empty_application], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:36.737
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:36.739
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:36.739
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:36.742
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:36.742
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.595
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.892
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.894
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.895
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.897
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.898
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.900
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.900
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.902
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.903
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.904
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.915
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.918
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.919
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.922
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.922
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.924
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.924
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.926
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.926
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:37.983
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf -sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3/src], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.123
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.125
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.126
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.128
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.139
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.145
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"OUTPUTS_IIC_HDMI": {"name": "iic",
+"ver": "3.3",
+},
+"PS_VIDEO_VIDEO_TPG": {"name": "v_tpg",
+"ver": "8.0",
+},
+"PS_VIDEO_VIDEO_VDMA1": {"name": "axivdma",
+"ver": "6.2",
+},
+"VIDEO_PIPELINE_TIMMING_CONTROLELR": {"name": "vtc",
+"ver": "7.2",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.3",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.4",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.2",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.2",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.1",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.3",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.4",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.0",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.2",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.3",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.146
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.279
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf], Result: [null, {"CLK_GEN_148MHZ": {"version": "5.3",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"clk_wiz_v1_1": {"name": "clk_wiz",
+"version": "1.1",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_1",
+},
+},
+},
+"OUTPUTS_GND": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"OUTPUTS_HDMI": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"OUTPUTS_IIC_HDMI": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"iic_v3_3": {"name": "iic",
+"version": "3.3",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/iic_v3_3",
+},
+},
+},
+"OUTPUTS_ILA_HDMI": {"version": "6.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"PS_VIDEO_PS_INTER": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"PS_VIDEO_PS_PS7": {"version": "5.5",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"PS_VIDEO_PS_PS7_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"PS_VIDEO_VIDEO_ILAS_V1": {"version": "6.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"PS_VIDEO_VIDEO_ILAS_V2": {"version": "6.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"PS_VIDEO_VIDEO_TPG": {"version": "7.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"tpg_v3_0": {"name": "tpg",
+"version": "3.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/tpg_v3_0",
+},
+"v_tpg_v8_0": {"name": "v_tpg",
+"version": "8.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/v_tpg_v8_0",
+},
+},
+},
+"PS_VIDEO_VIDEO_VDMA1": {"version": "6.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"axivdma_v6_2": {"name": "axivdma",
+"version": "6.2",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/axivdma_v6_2",
+},
+},
+},
+"PS_VIDEO_VIDEO_axi_mem_intercon": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"PS_VIDEO_VIDEO_axis_subset_converter_0": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"SYSTEM_RESETS_rst_PS7_150M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"SYSTEM_RESETS_rst_PS7_75M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"VIDEO_PIPELINE_GND": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"VIDEO_PIPELINE_ILS_V3": {"version": "6.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"VIDEO_PIPELINE_RESAMPLER": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cresample_v4_0": {"name": "cresample",
+"version": "4.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/cresample_v4_0",
+},
+},
+},
+"VIDEO_PIPELINE_RGB_2_YCRCB": {"version": "7.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"rgb2ycrcb_v7_0": {"name": "rgb2ycrcb",
+"version": "7.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/rgb2ycrcb_v7_0",
+},
+},
+},
+"VIDEO_PIPELINE_RGB_CCM": {"version": "6.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"ccm_v6_0": {"name": "ccm",
+"version": "6.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/ccm_v6_0",
+},
+},
+},
+"VIDEO_PIPELINE_TIMMING_CONTROLELR": {"version": "6.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"vtc_v7_2": {"name": "vtc",
+"version": "7.2",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/vtc_v7_2",
+},
+},
+},
+"VIDEO_PIPELINE_VCC": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"VIDEO_PIPELINE_VIDEO_OUT": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_clockc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_uart_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartps_v3_2": {"name": "uartps",
+"version": "3.2",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/uartps_v3_2",
+},
+},
+},
+"ps7_pl310_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_pmu_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_qspi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"qspips_v3_3": {"name": "qspips",
+"version": "3.3",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/qspips_v3_3",
+},
+},
+},
+"ps7_qspi_linear_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_axi_interconnect_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_cortexa9_0": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_cortexa9_v2_3": {"name": "cpu_cortexa9",
+"version": "2.3",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_3",
+},
+},
+},
+"ps7_cortexa9_1": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_cortexa9_v2_3": {"name": "cpu_cortexa9",
+"version": "2.3",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_3",
+},
+},
+},
+"ps7_ddr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"ddrps_v1_0": {"name": "ddrps",
+"version": "1.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/ddrps_v1_0",
+},
+},
+},
+"ps7_sd_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"sdps_v3_0": {"name": "sdps",
+"version": "3.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/sdps_v3_0",
+},
+},
+},
+"ps7_gpio_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpiops_v3_1": {"name": "gpiops",
+"version": "3.1",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/gpiops_v3_1",
+},
+},
+},
+"ps7_ddrc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dev_cfg_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"devcfg_v3_4": {"name": "devcfg",
+"version": "3.4",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/devcfg_v3_4",
+},
+},
+},
+"ps7_xadc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"xadcps_v2_2": {"name": "xadcps",
+"version": "2.2",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/xadcps_v2_2",
+},
+},
+},
+"ps7_ocmc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_coresight_comp_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"coresightps_dcc_v1_3": {"name": "coresightps_dcc",
+"version": "1.3",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/coresightps_dcc_v1_3",
+},
+},
+},
+"ps7_gpv_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_scuc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_globaltimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_intc_dist_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_l2cachec_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dma_s": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"dmaps_v2_2": {"name": "dmaps",
+"version": "2.2",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_2",
+},
+},
+},
+"ps7_iop_bus_config_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_ram_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_ram_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_scugic_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scugic_v3_4": {"name": "scugic",
+"version": "3.4",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/scugic_v3_4",
+},
+},
+},
+"ps7_scutimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scutimer_v2_1": {"name": "scutimer",
+"version": "2.1",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/scutimer_v2_1",
+},
+},
+},
+"ps7_scuwdt_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scuwdt_v2_1": {"name": "scuwdt",
+"version": "2.1",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/scuwdt_v2_1",
+},
+},
+},
+"ps7_slcr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dma_ns": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"dmaps_v2_2": {"name": "dmaps",
+"version": "2.2",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_2",
+},
+},
+},
+"ps7_afi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_2": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_3": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_m_axi_gp0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2016.3/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.377
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.379
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.380
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.382
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.387
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.390
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.392
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:38.394
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:39.042
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:39.045
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:39.045
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:39.048
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:39.061
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:39.063
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:39.116
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:19:39.118
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-18 21:19:39.211
+!MESSAGE Indexed 'r_pattern_v3' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-03-18 21:19:40.205
+!MESSAGE Indexed 'r_pattern_v3_bsp' (128 sources, 75 headers) in 0.987 sec: 5,998 declarations; 36,709 references; 47 unresolved inclusions; 3 syntax errors; 52 unresolved names (0.12%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:40.422
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:40.515
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:40.519
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:40.661
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:40.668
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:40.756
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:40.761
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:40.841
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:40.847
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:40.931
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:40.937
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.031
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.035
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.134
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.139
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.242
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.247
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.344
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.348
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.443
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.449
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.545
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.550
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.647
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.653
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.749
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.761
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.856
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:41.862
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.251
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.258
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.352
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.358
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.454
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.458
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.562
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.567
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.665
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.670
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.767
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.774
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:42.826
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:43.870
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:43.940
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:43.946
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:44.004
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:44.187
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:44.193
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:44.246
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:44.276
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:44.281
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:44.338
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:44.404
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:44.409
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:44.466
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:45.350
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:45.354
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:45.410
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:46.280
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:46.287
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:46.340
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:47.351
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:47.357
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:47.410
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:49.084
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:49.088
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:49.144
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:50.143
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:50.147
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:50.201
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:51.056
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:51.061
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:51.118
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:51.650
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:51.655
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:51.709
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:52.228
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:52.233
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:52.290
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:53.152
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:53.157
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:53.253
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:57.276
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:57.280
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:57.333
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:58.410
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:58.414
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:58.465
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:59.286
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:59.292
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:19:59.349
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:20:00.311
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:20:00.315
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:20:00.368
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:20:01.462
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:20:01.467
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:20:01.524
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:20:02.515
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-03-18 21:20:02.566
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:23:14.418
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:23:14.421
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:23:14.422
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:23:14.424
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:23:14.425
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:23:14.426
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:43.323
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:43.327
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:43.327
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:43.329
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:43.329
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:43.330
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:45.707
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:45.710
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:45.710
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:45.713
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:45.713
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:45.715
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:47.090
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:47.094
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:47.095
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:47.097
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:47.223
+!MESSAGE XSCT Command: [::hsi::utils::lg_init C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:47.226
+!MESSAGE XSCT command with result: [::hsi::utils::lg_init C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, lg1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:47.226
+!MESSAGE XSCT Command: [::hsi::utils::lg_get_memories -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:47.228
+!MESSAGE XSCT command with result: [::hsi::utils::lg_get_memories -json], Result: [null, {"ps7_ddr_0_S_AXI_BASEADDR": {"base_addr": "0x100000",
+"size": "0x1FF00000",
+},
+"ps7_qspi_linear_0_S_AXI_BASEADDR": {"base_addr": "0xFC000000",
+"size": "0x1000000",
+},
+"ps7_ram_0_S_AXI_BASEADDR": {"base_addr": "0x0",
+"size": "0x30000",
+},
+"ps7_ram_1_S_AXI_BASEADDR": {"base_addr": "0xFFFF0000",
+"size": "0xFE00",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:47.235
+!MESSAGE XSCT Command: [::hsi::utils::lg_get_sections -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:47.242
+!MESSAGE XSCT command with result: [::hsi::utils::lg_get_sections -json], Result: [null, {"code_sections": ".text:0x0::ps7_ddr_0_S_AXI_BASEADDR:ps7_qspi_linear_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR",
+"data_sections": ".rodata:0x0::ps7_ddr_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR .rodata1:0x0::ps7_ddr_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR .sdata2:0x0::ps7_ddr_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR .sbss2:0x0::ps7_ddr_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR .data:0x0::ps7_ddr_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR .data1:0x0::ps7_ddr_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR .fixup:0x0::ps7_ddr_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR .sdata:0x0::ps7_ddr_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR .sbss:0x0::ps7_ddr_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR .bss:0x0::ps7_ddr_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR",
+"stack_section": "stack:0x2000::ps7_ddr_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR",
+"heap_section": "heap:0x2000::ps7_ddr_0_S_AXI_BASEADDR:ps7_ram_0_S_AXI_BASEADDR:ps7_ram_1_S_AXI_BASEADDR",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.322
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .text -mem ps7_ddr_0_S_AXI_BASEADDR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.323
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .text -mem ps7_ddr_0_S_AXI_BASEADDR], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.324
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .rodata -mem ps7_ddr_0_S_AXI_BASEADDR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.325
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .rodata -mem ps7_ddr_0_S_AXI_BASEADDR], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.325
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .rodata1 -mem ps7_ddr_0_S_AXI_BASEADDR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.327
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .rodata1 -mem ps7_ddr_0_S_AXI_BASEADDR], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.327
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .sdata2 -mem ps7_ddr_0_S_AXI_BASEADDR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.328
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .sdata2 -mem ps7_ddr_0_S_AXI_BASEADDR], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.329
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .sbss2 -mem ps7_ddr_0_S_AXI_BASEADDR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.330
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .sbss2 -mem ps7_ddr_0_S_AXI_BASEADDR], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.330
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .data -mem ps7_ddr_0_S_AXI_BASEADDR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.331
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .data -mem ps7_ddr_0_S_AXI_BASEADDR], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.332
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .data1 -mem ps7_ddr_0_S_AXI_BASEADDR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.333
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .data1 -mem ps7_ddr_0_S_AXI_BASEADDR], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.333
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .fixup -mem ps7_ddr_0_S_AXI_BASEADDR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.335
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .fixup -mem ps7_ddr_0_S_AXI_BASEADDR], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.335
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .sdata -mem ps7_ddr_0_S_AXI_BASEADDR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.336
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .sdata -mem ps7_ddr_0_S_AXI_BASEADDR], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.337
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .sbss -mem ps7_ddr_0_S_AXI_BASEADDR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.338
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .sbss -mem ps7_ddr_0_S_AXI_BASEADDR], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.338
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec .bss -mem ps7_ddr_0_S_AXI_BASEADDR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.339
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec .bss -mem ps7_ddr_0_S_AXI_BASEADDR], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.340
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec heap -mem ps7_ddr_0_S_AXI_BASEADDR -size 1024], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.342
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec heap -mem ps7_ddr_0_S_AXI_BASEADDR -size 1024], Result: [null, 1024]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.342
+!MESSAGE XSCT Command: [::hsi::utils::lg_set_section_memory -sec stack -mem ps7_ddr_0_S_AXI_BASEADDR -size 1024], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.344
+!MESSAGE XSCT command with result: [::hsi::utils::lg_set_section_memory -sec stack -mem ps7_ddr_0_S_AXI_BASEADDR -size 1024], Result: [null, 1024]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.344
+!MESSAGE XSCT Command: [::hsi::utils::lg_generate C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3/src/lscript.ld], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.346
+!MESSAGE XSCT command with result: [::hsi::utils::lg_generate C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3/src/lscript.ld], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.416
+!MESSAGE XSCT Command: [::hsi::utils::lg_delete], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:49.417
+!MESSAGE XSCT command with result: [::hsi::utils::lg_delete], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:55.001
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:55.003
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:55.003
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:55.006
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:55.006
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:25:55.007
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:26:03.484
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:26:03.487
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:26:03.488
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:26:03.490
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:26:03.490
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:26:03.492
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:26:05.237
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:26:05.240
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:26:05.241
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:26:05.243
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Sim/VIDEO_R7/VIDEO_R6.sdk/VIDEO_R6_wrapper_hw_platform_0/system.hdf C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:26:05.244
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-18 21:26:05.245
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Sim/VIDEO_R7/VIDEO_R6.sdk/r_pattern_v3_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2017-03-18 21:26:10.824
+!MESSAGE Updating toolusage

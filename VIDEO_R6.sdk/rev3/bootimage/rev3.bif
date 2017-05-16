@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Sim\VIDEO_R8\d5m_camera_soc.sdk\fsbl\Debug\fsbl.elf
+	C:\Sim\VIDEO_R8\d5m_camera_soc.sdk\d5m_camera_soc_wrapper_hw_platform_0\d5m_camera_soc_wrapper.bit
+	C:\Sim\VIDEO_R8\d5m_camera_soc.sdk\rev3\Debug\rev3.elf
+}
